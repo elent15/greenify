@@ -1,0 +1,70 @@
+@mixin burger {
+  display: none;
+
+  @media (max-width: 1150px) {
+    position: relative;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 20px;
+    width: 28px;
+    height: 24px;
+
+    &--active {
+      margin-left: 15px;
+
+      & .burger__line:first-child {
+        position: absolute;
+        left: 25%;
+        top: 50%;
+        transform: rotate(45deg);
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+      }
+
+      & .burger__line:last-child {
+        position: absolute;
+        bottom: auto;
+        left: 25%;
+        top: 50%;
+        width: 100%;
+        transform: rotate(-45deg);
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+      }
+
+      & .burger__line:nth-child(2) {
+        transform: scale(0);
+        transition: transform 0.3s ease-in-out;
+      }
+    }
+
+    &__line {
+      width: 100%;
+      height: 3px;
+      background-color: var(--black);
+
+      &:nth-child(3) {
+        width: 50%;
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus .burger__line {
+      background-color: var(--primary-green);
+    }
+
+    &:hover .burger__line {
+      background-color: var(--primary-green);
+    }
+  }
+
+  @media (max-width: 560px) {
+    width: 23px;
+    height: 20px;
+  }
+}

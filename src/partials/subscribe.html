@@ -1,0 +1,46 @@
+<section class="subscribe">
+  <div class="subscribe__background">
+    <div class="outer-container">
+      <div class="container subscribe__container">
+        <div class="subscribe__block">
+          <div class="subscribe__img-block">
+            <picture>
+              <source media="(max-width: 734px)" srcset="./images/subscribe-sm.webp" type="image/webp">
+              <source media="(max-width: 734px)" srcset="./images/subscribe-sm.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/subscribe-md.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/subscribe-md.jpg">
+              <source srcset="./images/subscribe-bg.webp" type="image/webp">
+              <img loading="lazy" class="subscribe__img" src="./images/subscribe-bg.jpg" alt="Paper bag with dishes" width="360" height="430">
+            </picture>
+          </div>
+          <div class="subscribe__content">
+            <h3 class="third-title subscribe__content-title">
+              "Subscribe to our Newsletter"
+            </h3>
+            <div class="text subscribe__content-text">
+              Join our green community and receive exclusive offers and
+              insightful content straight to your inbox!
+            </div>
+            <form class="subscribe__form">
+              <label class="subscribe__form-label">
+                <input type="text" class="subscribe__form-input" placeholder="Enter your name">
+              </label>
+              <label class="subscribe__form-label">
+                <input type="email" class="subscribe__form-input" placeholder="Enter your e-mail">
+              </label>
+              <button class="btn btn-reset subscribe__form-btn" onclick="event.preventDefault()">
+                subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg class="green-branch">
+        <use xlink:href="./images/sprite.svg#green-branch"></use>
+      </svg>
+      <svg class="primary-circle">
+        <use xlink:href="./images/sprite.svg#primary-circle"></use>
+      </svg>
+    </div>
+  </div>
+</section>
