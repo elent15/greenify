@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenify</title>
+  <link rel="preload" href="./fonts/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Lato-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Lato-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Lato-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Montserrat-Black.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./css/vendor.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <script defer src="./js/vendor.js"></script>
+  <script defer src="./js/main.js"></script>
+</head>
+
+<body>
+  <header class="header">
+  <div class="container header__container">
+    <div class="header__top">
+      <span class="header__top-timer">
+        <span class="header__top-hours">9</span>
+        :
+        <span class="header__top-minutes">41</span>
+      </span>
+      <div class="header__top-block">
+        <span class="header__top-reception">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_420_95" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="12"
+              height="12">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 12V0L0 12H12Z" fill="white" />
+            </mask>
+            <g mask="url(#mask0_420_95)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M9 0V12H12V0H9Z" fill="#e6e6e6" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M6 0V12H9V0H6Z" fill="#e6e6e6" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0V12H6V0H3Z" fill="black" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V12H3V0H0Z" fill="black" />
+            </g>
+          </svg>
+        </span>
+        <span class="header__top-wifi">
+          <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_420_83" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="16"
+              height="12">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V3L8 12L16 3V0H8H0Z" fill="white" />
+            </mask>
+            <g mask="url(#mask0_420_83)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8 0C1.4 0 -4 5.4 -4 12C-4 18.6 1.4 24 8 24C14.6 24 20 18.6 20 12C20 5.4 14.6 0 8 0ZM8 21C3 21 -1 17 -1 12C-1 7 3 3 8 3C13 3 17 7 17 12C17 17 13 21 8 21Z"
+                fill="#838383" fill-opacity="0.2" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8 3C3 3 -1 7 -1 12C-1 17 3 21 8 21C13 21 17 17 17 12C17 7 13 3 8 3ZM8 18C4.7 18 2 15.3 2 12C2 8.7 4.7 6 8 6C11.3 6 14 8.7 14 12C14 15.3 11.3 18 8 18Z"
+                fill="black" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8 6C4.7 6 2 8.7 2 12C2 15.3 4.7 18 8 18C11.3 18 14 15.3 14 12C14 8.7 11.3 6 8 6ZM8 15C6.3 15 5 13.7 5 12C5 10.3 6.3 9 8 9C9.7 9 11 10.3 11 12C11 13.7 9.7 15 8 15Z"
+                fill="black" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8 15C9.65685 15 11 13.6569 11 12C11 10.3431 9.65685 9 8 9C6.34315 9 5 10.3431 5 12C5 13.6569 6.34315 15 8 15Z"
+                fill="black" />
+            </g>
+          </svg>
+        </span>
+        <span class="header__top-battery">
+          <span class="header__top-percent">
+            50%
+          </span>
+          <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <mask id="mask0_420_103" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="8"
+              height="14">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7 1.5H6V0.5H2V1.5H1C0.4 1.5 0 1.9 0 2.5V12.5C0 13.1 0.4 13.5 1 13.5H7C7.6 13.5 8 13.1 8 12.5V2.5C8 1.9 7.6 1.5 7 1.5Z"
+                fill="white" />
+            </mask>
+            <g mask="url(#mask0_420_103)">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 10.5V13.5H8V10.5H0Z" fill="black" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 7.5V10.5H8V7.5H0Z" fill="black" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.5V7.5H8V4.5H0Z" fill="#e6e6e6" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.5V4.5H8V1.5H0Z" fill="#e6e6e6" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M2 0.5V1.5H6V0.5H2Z" fill="#e6e6e6" />
+            </g>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" type="button">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <div class="logo header__logo">
+        <img src="./images/svg/logo.svg" alt="Logo" width="171" height="43">
+      </div>
+      <nav class="nav header__nav">
+        <ul class="nav__list header__nav-list list-reset">
+          <li class="header__nav-item item-js">
+            <a class="header__nav-link" href="#">
+              Home
+            </a>
+          </li>
+          <li class="header__nav-item item-js">
+            <a class="header__nav-link" href="#products">
+              Shop
+            </a>
+          </li>
+          <li class="header__nav-item nav__menu-item">
+            <button class="btn-reset header__nav-link nav__menu-btn" type="button">
+              Categories
+              <svg class="nav__menu-btn-arrow header__nav-link-arrow">
+                <use xlink:href="./images/sprite.svg#down"></use>
+              </svg>
+            </button>
+            <ul class="list-reset nav__submenu-list header__submenu-list">
+              <li class="nav__submenu-item item-js">
+                <a class="header__nav-link nav__submenu-link" href="#products">
+                  Bag
+                </a>
+              </li>
+              <li class="nav__submenu-item item-js">
+                <a class="header__nav-link nav__submenu-link" href="#products">
+                  T-shirts
+                </a>
+              </li>
+              <li class="nav__submenu-item item-js">
+                <a class="header__nav-link nav__submenu-link" href="#products">
+                  Toothbrush
+                </a>
+              </li>
+              <li class="nav__submenu-item item-js">
+                <a class="header__nav-link nav__submenu-link" href="#products">
+                  Pens
+                </a>
+              </li>
+              <li class="nav__submenu-item item-js">
+                <a class="header__nav-link nav__submenu-link" href="#products">
+                  Pencils
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header__nav-item item-js">
+            <a class="header__nav-link" href="#about">
+              About us
+            </a>
+          </li>
+          <li class="header__nav-item item-js">
+            <a class="header__nav-link" href="#footer">
+              Contact us
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__bottom-block">
+        <button class="header__cart-btn btn-reset" aria-label="Cart" type="button">
+          <svg>
+            <use xlink:href="./images/sprite.svg#cart"></use>
+          </svg>
+        </button>
+        <button class="header__profile-btn btn-reset" type="button">
+          <picture>
+            <source media="(max-width: 734px)" srcset="./images/profile-sm.webp" type="image/webp">
+            <source media="(max-width: 734px)" srcset="./images/profile-sm.jpg">
+            <source srcset="./images/profile-bg.webp" type="image/webp">
+            <img class="header__profile-img" src="./images/profile-bg.jpg" alt="Client's photo" width="24" height="24">
+          </picture>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+  <main>
+    <section class="hero">
+  <div class="outer-container">
+    <div class="hero__container">
+      <div class="hero__content">
+        <h1 class="first-title hero__title">
+          Welcome to Greenify
+          <span class="hero__title-span">
+            Your Sustainable
+          </span>
+          <span class="hero__title-primary-span">
+            Shopping Destination
+          </span>
+        </h1>
+        <div class="text hero__text">
+          "Discover Sustainability. Embrace Greenify.<br>
+          Your Eco-Friendly Haven for Conscious Shopping."
+        </div>
+        <button class="btn btn-reset hero__btn" type="button">
+          shop now
+        </button>
+      </div>
+      <div class="hero__img-block">
+        <div class="swiper hero-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hero-swiper-slide">
+              <picture>
+                <source media="(max-width: 560px)" srcset="./images/hero-sm-1.webp" type="image/webp">
+                <source media="(max-width: 560px)" srcset="./images/hero-sm-1.png">
+                <source media="(max-width: 1150px)" srcset="./images/hero-md-1.webp" type="image/webp">
+                <source media="(max-width: 1150px)" srcset="./images/hero-md-1.png">
+                <source srcset="./images/hero-bg-1.webp" type="image/webp">
+                <img src="./images/hero-bg-1.png" alt="Eco-products" width="360" height="530">
+              </picture>
+            </div>
+            <div class="swiper-slide hero-swiper-slide">
+              <picture>
+                <source media="(max-width: 560px)" srcset="./images/hero-sm-2.webp" type="image/webp">
+                <source media="(max-width: 560px)" srcset="./images/hero-sm-2.png">
+                <source media="(max-width: 1150px)" srcset="./images/hero-md-2.webp" type="image/webp">
+                <source media="(max-width: 1150px)" srcset="./images/hero-md-2.png">
+                <source srcset="./images/hero-bg-2.webp" type="image/webp">
+                <img src="./images/hero-bg-2.png" alt="Eco-products" width="360" height="530" loading="lazy">
+              </picture>
+            </div>
+            <div class="swiper-slide hero-swiper-slide">
+              <picture>
+                <source media="(max-width: 560px)" srcset="./images/hero-sm-3.webp" type="image/webp">
+                <source media="(max-width: 560px)" srcset="./images/hero-sm-3.png">
+                <source media="(max-width: 1150px)" srcset="./images/hero-md-3.webp" type="image/webp">
+                <source media="(max-width: 1150px)" srcset="./images/hero-md-3.png">
+                <source srcset="./images/hero-bg-3.webp" type="image/webp">
+                <img src="./images/hero-bg-3.png" alt="Eco-products" width="360" height="530" loading="lazy">
+              </picture>
+            </div>
+            <div class="swiper-slide hero-swiper-slide">
+              <picture>
+                <source media="(max-width: 560px)" srcset="./images/hero-sm-4.webp" type="image/webp">
+                <source media="(max-width: 560px)" srcset="./images/hero-sm-4.png">
+                <source media="(max-width: 1150px)" srcset="./images/hero-md-4.webp" type="image/webp">
+                <source media="(max-width: 1150px)" srcset="./images/hero-md-4.png">
+                <source srcset="./images/hero-bg-4.webp" type="image/webp">
+                <img src="./images/hero-bg-4.png" alt="Eco-products" width="360" height="530" loading="lazy">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg class="primary-butterfly">
+      <use xlink:href="./images/sprite.svg#primary-butterfly"></use>
+    </svg>
+    <svg class="accent-butterfly">
+      <use xlink:href="./images/sprite.svg#accent-butterfly"></use>
+    </svg>
+    <svg class="hero-lamp">
+      <use xlink:href="./images/sprite.svg#hero-lamp"></use>
+    </svg>
+  </div>
+</section>
+
+    <section class="why">
+  <div class="container why__container">
+    <h2 class="second-title why__title">
+      Why Choose Greenify?
+    </h2>
+    <div class="why__card-block">
+      <div class="why__card">
+        <img class="why__card-img" src="./images/svg/why-1.svg" alt="Icon" width="132" height="132">
+        <h3 class="third-title why__card-title">
+          Sustainable Products
+        </h3>
+        <div class="text why__card-text">
+          Explore our carefully curated
+          selection of sustainable products,
+          each designed to reduce your
+          carbon footprint
+        </div>
+      </div>
+      <div class="why__card">
+        <img class="why__card-img" src="./images/svg/why-2.svg" alt="Icon" width="132" height="132">
+        <h3 class="third-title why__card-title">
+          Eco-Friendly Choices
+        </h3>
+        <div class="text why__card-text">
+          Make conscious choices with our
+          eco-friendly products, knowing
+          that your purchases promote ethical
+          sourcing and responsible
+          manufacturing practices.
+        </div>
+      </div>
+      <div class="why__card">
+        <img class="why__card-img" src="./images/svg/why-3.svg" alt="Icon" width="132" height="132">
+        <h3 class="third-title why__card-title">
+          High-Quality Selection
+        </h3>
+        <div class="text why__card-text">
+          Invest in long-lasting and reliable
+          products that meet our stringent
+          quality standards, ensuring your
+          satisfaction and the longevity of
+          your purchases.
+        </div>
+      </div>
+      <div class="why__card">
+        <img class="why__card-img" src="./images/svg/why-4.svg" alt="Icon" width="132" height="132">
+        <h3 class="third-title why__card-title">
+          Sustainable Packaging
+        </h3>
+        <div class="text why__card-text">
+          Our sustainable packaging ensures
+          that your orders arrive safely
+          while minimizing their impact on
+          the planet.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="products" id="products">
+  <div class="outer-container">
+    <div class="container products__container">
+      <h2 class="second-title products__title">
+        Our Best-Selling Sustainable Products
+      </h2>
+      <div class="products__card-block">
+        <div class="products__card">
+          <div class="products__card-img-block" tabindex="0">
+            <picture class="products__card-face">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-1.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-1.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-1.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-1.jpg">
+              <source srcset="./images/product-bg-1.webp" type="image/webp">
+              <img class="products__card-img" loading="lazy" src="./images/product-bg-1.jpg" alt="Organic cotton tote bag" width="360"
+                height="450">
+            </picture>
+            <div class="products__card-back">
+              <div class="products__card-back-text text">
+                Experience eco-conscious convenience
+                with our Organic Cotton Tote Bag.
+                Crafted from 100% organic cotton,
+                this versatile accessory not only
+                complements your sustainable lifestyle
+                but also helps reduce plastic waste.
+                With its spacious design and sturdy
+                construction, it's the perfect eco-friendly
+                companion for shopping trips, outings,
+                and daily errands."
+              </div>
+            </div>
+          </div>
+          <h3 class="third-title products__card-title">
+            Organic cotton tote bag
+          </h3>
+          <div class="products__card-info">
+            <span class="products__card-price-block">
+              <span class="products__card-discounted-price">
+                50 Rs.
+              </span>
+              <span class="products__card-price">
+                70 Rs.
+              </span>
+            </span>
+            <button class="btn-reset products__card-reviews" type="button">
+              235 Reviews
+            </button>
+          </div>
+          <button class="btn btn-reset products__card-btn" type="button">
+            buy now
+          </button>
+        </div>
+        <div class="products__card">
+          <div class="products__card-img-block" tabindex="0">
+            <picture class="products__card-face">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-2.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-2.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-2.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-2.jpg">
+              <source srcset="./images/product-bg-2.webp" type="image/webp">
+              <img class="products__card-img" loading="lazy" src="./images/product-bg-2.jpg" alt="Hemp backpack" width="360" height="450">
+            </picture>
+            <div class="products__card-back">
+              <div class="products__card-back-text text">
+                Embrace sustainable adventure with our
+                Hemp Backpack - a conscious choice for
+                nature enthusiasts. Made from durable
+                hemp fabric, this eco-friendly backpack is
+                designed to withstand the elements while
+                minimizing environmental impact.
+                With ample storage and ergonomic design.
+              </div>
+            </div>
+          </div>
+          <h3 class="third-title products__card-title">
+            Hemp backpack
+          </h3>
+          <div class="products__card-info">
+            <span class="products__card-price-block">
+              <span class="products__card-discounted-price">
+                999 Rs.
+              </span>
+              <span class="products__card-price">
+                1199 Rs.
+              </span>
+            </span>
+            <button class="btn-reset products__card-reviews" type="button">
+              729 Reviews
+            </button>
+          </div>
+          <button class="btn btn-reset products__card-btn" type="button">
+            buy now
+          </button>
+        </div>
+        <div class="products__card">
+          <div class="products__card-img-block" tabindex="0">
+            <picture class="products__card-face">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-3.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-3.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-3.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-3.jpg">
+              <source srcset="./images/product-bg-3.webp" type="image/webp">
+              <img class="products__card-img" loading="lazy" src="./images/product-bg-3.jpg" alt="Organic cotton T-shirts" width="360"
+                height="450">
+            </picture>
+            <div class="products__card-back">
+              <div class="products__card-back-text text">
+                Indulge in eco-friendly comfort with
+                our Organic Cotton T-Shirts.
+                Crafted from 100% organic cotton,
+                these soft and breathable shirts are gentle
+                on your skin and kind to the planet.
+                With a timeless design and sustainable
+                materials, they are the perfect addition to
+                your conscious wardrobe, promoting
+                a greener and more stylish lifestyle.
+              </div>
+            </div>
+          </div>
+          <h3 class="third-title products__card-title">
+            Organic cotton T-shirts
+          </h3>
+          <div class="products__card-info">
+            <span class="products__card-price-block">
+              <span class="products__card-discounted-price">
+                499 Rs.
+              </span>
+              <span class="products__card-price">
+                699 Rs.
+              </span>
+            </span>
+            <button class="btn-reset products__card-reviews" type="button">
+              825 Reviews
+            </button>
+          </div>
+          <button class="btn btn-reset products__card-btn" type="button">
+            buy now
+          </button>
+        </div>
+        <div class="products__card">
+          <div class="products__card-img-block" tabindex="0">
+            <picture class="products__card-face">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-4.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-4.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-4.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-4.jpg">
+              <source srcset="./images/product-bg-4.webp" type="image/webp">
+              <img class="products__card-img" loading="lazy" src="./images/product-bg-4.jpg" alt="Bamboo toothbrush" width="360" height="450">
+            </picture>
+            <div class="products__card-back">
+              <div class="products__card-back-text text">
+                Upgrade your oral care routine with our
+                Bamboo Toothbrush - an eco-friendly
+                alternative for a brighter smile and a cleaner
+                planet. Crafted from sustainable bamboo and
+                BPA-free bristles, this toothbrush offers
+                a gentle yet effective cleaning experience.
+                Join the movement towards reducing
+                plastic waste and embrace sustainable
+                dental care with every brush.
+              </div>
+            </div>
+          </div>
+          <h3 class="third-title products__card-title">
+            Bamboo toothbrush
+          </h3>
+          <div class="products__card-info">
+            <span class="products__card-price-block">
+              <span class="products__card-discounted-price">
+                99 Rs.
+              </span>
+              <span class="products__card-price">
+                149 Rs.
+              </span>
+            </span>
+            <button class="btn-reset products__card-reviews" type="button">
+              248 Reviews
+            </button>
+          </div>
+          <button class="btn btn-reset products__card-btn" type="button">
+            buy now
+          </button>
+        </div>
+        <div class="products__card">
+          <div class="products__card-img-block" tabindex="0">
+            <picture class="products__card-face">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-5.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-5.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-5.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-5.jpg">
+              <source srcset="./images/product-bg-5.webp" type="image/webp">
+              <img class="products__card-img" loading="lazy" src="./images/product-bg-5.jpg" alt="Bamboo pens and pencils" width="360"
+                height="450">
+            </picture>
+            <div class="products__card-back">
+              <div class="products__card-back-text text">
+                Experience the power of sustainability in
+                every stroke with our Bamboo Pens and
+                Pencils. Crafted from renewable bamboo,
+                these writing instruments are not only
+                eco-friendly but also offer a smooth and
+                comfortable writing experience. Embrace
+                conscious stationery choices that leave
+                a positive impact on the environment.
+              </div>
+            </div>
+          </div>
+          <h3 class="third-title products__card-title">
+            Bamboo pens and pencils
+          </h3>
+          <div class="products__card-info">
+            <span class="products__card-price-block">
+              <span class="products__card-discounted-price">
+                49 Rs.
+              </span>
+              <span class="products__card-price">
+                89 Rs.
+              </span>
+            </span>
+            <button class="btn-reset products__card-reviews" type="button">
+              1256 Reviews
+            </button>
+          </div>
+          <button class="btn btn-reset products__card-btn" type="button">
+            buy now
+          </button>
+        </div>
+        <div class="products__card">
+          <div class="products__card-img-block" tabindex="0">
+            <picture class="products__card-face">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-6.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-6.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-6.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-6.jpg">
+              <source srcset="./images/product-bg-6.webp" type="image/webp">
+              <img class="products__card-img" loading="lazy" src="./images/product-bg-6.jpg" alt="Jute grocery bag" width="360" height="450">
+            </picture>
+            <div class="products__card-back">
+              <div class="products__card-back-text text">
+                Make grocery shopping greener and easier
+                with our Jute Grocery Bag. Crafted from
+                natural jute fibers, this sturdy and reusable
+                bag is the perfect eco-conscious companion
+                for your sustainable lifestyle.
+                Ditch single-use plastics and opt for this
+                eco-friendly alternative to carry your
+                groceries while reducing plastic waste.
+              </div>
+            </div>
+          </div>
+          <h3 class="third-title products__card-title">
+            Jute grocery bag
+          </h3>
+          <div class="products__card-info">
+            <span class="products__card-price-block">
+              <span class="products__card-discounted-price">
+                59 Rs.
+              </span>
+              <span class="products__card-price">
+                89 Rs.
+              </span>
+            </span>
+            <button class="btn-reset products__card-reviews" type="button">
+              895 Reviews
+            </button>
+          </div>
+          <button class="btn btn-reset products__card-btn" type="button">
+            buy now
+          </button>
+        </div>
+        <div class="products__card">
+          <div class="products__card-img-block" tabindex="0">
+            <picture class="products__card-face">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-1.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-1.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-1.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-1.jpg">
+              <source srcset="./images/product-bg-1.webp" type="image/webp">
+              <img class="products__card-img" loading="lazy" src="./images/product-bg-1.jpg" alt="Organic cotton tote bag" width="360"
+                height="450">
+            </picture>
+            <div class="products__card-back">
+              <div class="products__card-back-text text">
+                Experience eco-conscious convenience
+                with our Organic Cotton Tote Bag.
+                Crafted from 100% organic cotton,
+                this versatile accessory not only
+                complements your sustainable lifestyle
+                but also helps reduce plastic waste.
+                With its spacious design and sturdy
+                construction, it's the perfect eco-friendly
+                companion for shopping trips, outings,
+                and daily errands."
+              </div>
+            </div>
+          </div>
+          <h3 class="third-title products__card-title">
+            Organic cotton tote bag
+          </h3>
+          <div class="products__card-info">
+            <span class="products__card-price-block">
+              <span class="products__card-discounted-price">
+                50 Rs.
+              </span>
+              <span class="products__card-price">
+                70 Rs.
+              </span>
+            </span>
+            <button class="btn-reset products__card-reviews" type="button">
+              235 Reviews
+            </button>
+          </div>
+          <button class="btn btn-reset products__card-btn" type="button">
+            buy now
+          </button>
+        </div>
+        <div class="products__card">
+          <div class="products__card-img-block" tabindex="0">
+            <picture class="products__card-face">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-2.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-2.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-2.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-2.jpg">
+              <source srcset="./images/product-bg-2.webp" type="image/webp">
+              <img class="products__card-img" loading="lazy" src="./images/product-bg-2.jpg" alt="Hemp backpack" width="360" height="450">
+            </picture>
+            <div class="products__card-back">
+              <div class="products__card-back-text text">
+                Embrace sustainable adventure with our
+                Hemp Backpack - a conscious choice for
+                nature enthusiasts. Made from durable
+                hemp fabric, this eco-friendly backpack is
+                designed to withstand the elements while
+                minimizing environmental impact.
+                With ample storage and ergonomic design.
+              </div>
+            </div>
+          </div>
+          <h3 class="third-title products__card-title">
+            Hemp backpack
+          </h3>
+          <div class="products__card-info">
+            <span class="products__card-price-block">
+              <span class="products__card-discounted-price">
+                999 Rs.
+              </span>
+              <span class="products__card-price">
+                1199 Rs.
+              </span>
+            </span>
+            <button class="btn-reset products__card-reviews" type="button">
+              729 Reviews
+            </button>
+          </div>
+          <button class="btn btn-reset products__card-btn" type="button">
+            buy now
+          </button>
+        </div>
+        <div class="products__card">
+          <div class="products__card-img-block" tabindex="0">
+            <picture class="products__card-face">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-3.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-3.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-3.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-3.jpg">
+              <source srcset="./images/product-bg-3.webp" type="image/webp">
+              <img class="products__card-img" loading="lazy" src="./images/product-bg-3.jpg" alt="Organic cotton T-shirts" width="360"
+                height="450">
+            </picture>
+            <div class="products__card-back">
+              <div class="products__card-back-text text">
+                Indulge in eco-friendly comfort with
+                our Organic Cotton T-Shirts.
+                Crafted from 100% organic cotton,
+                these soft and breathable shirts are gentle
+                on your skin and kind to the planet.
+                With a timeless design and sustainable
+                materials, they are the perfect addition to
+                your conscious wardrobe, promoting
+                a greener and more stylish lifestyle.
+              </div>
+            </div>
+          </div>
+          <h3 class="third-title products__card-title">
+            Organic cotton T-shirts
+          </h3>
+          <div class="products__card-info">
+            <span class="products__card-price-block">
+              <span class="products__card-discounted-price">
+                499 Rs.
+              </span>
+              <span class="products__card-price">
+                699 Rs.
+              </span>
+            </span>
+            <button class="btn-reset products__card-reviews" type="button">
+              825 Reviews
+            </button>
+          </div>
+          <button class="btn btn-reset products__card-btn" type="button">
+            buy now
+          </button>
+        </div>
+        <div class="products__card">
+          <div class="products__card-img-block" tabindex="0">
+            <picture class="products__card-face">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-4.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-4.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-4.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-4.jpg">
+              <source srcset="./images/product-bg-4.webp" type="image/webp">
+              <img class="products__card-img" loading="lazy" src="./images/product-bg-4.jpg" alt="Bamboo toothbrush" width="360" height="450">
+            </picture>
+            <div class="products__card-back">
+              <div class="products__card-back-text text">
+                Upgrade your oral care routine with our
+                Bamboo Toothbrush - an eco-friendly
+                alternative for a brighter smile and a cleaner
+                planet. Crafted from sustainable bamboo and
+                BPA-free bristles, this toothbrush offers
+                a gentle yet effective cleaning experience.
+                Join the movement towards reducing
+                plastic waste and embrace sustainable
+                dental care with every brush.
+              </div>
+            </div>
+          </div>
+          <h3 class="third-title products__card-title">
+            Bamboo toothbrush
+          </h3>
+          <div class="products__card-info">
+            <span class="products__card-price-block">
+              <span class="products__card-discounted-price">
+                99 Rs.
+              </span>
+              <span class="products__card-price">
+                149 Rs.
+              </span>
+            </span>
+            <button class="btn-reset products__card-reviews" type="button">
+              248 Reviews
+            </button>
+          </div>
+          <button class="btn btn-reset products__card-btn" type="button">
+            buy now
+          </button>
+        </div>
+        <div class="products__card">
+          <div class="products__card-img-block" tabindex="0">
+            <picture class="products__card-face">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-5.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-5.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-5.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-5.jpg">
+              <source srcset="./images/product-bg-5.webp" type="image/webp">
+              <img class="products__card-img" loading="lazy" src="./images/product-bg-5.jpg" alt="Bamboo pens and pencils" width="360"
+                height="450">
+            </picture>
+            <div class="products__card-back">
+              <div class="products__card-back-text text">
+                Experience the power of sustainability in
+                every stroke with our Bamboo Pens and
+                Pencils. Crafted from renewable bamboo,
+                these writing instruments are not only
+                eco-friendly but also offer a smooth and
+                comfortable writing experience. Embrace
+                conscious stationery choices that leave
+                a positive impact on the environment.
+              </div>
+            </div>
+          </div>
+          <h3 class="third-title products__card-title">
+            Bamboo pens and pencils
+          </h3>
+          <div class="products__card-info">
+            <span class="products__card-price-block">
+              <span class="products__card-discounted-price">
+                49 Rs.
+              </span>
+              <span class="products__card-price">
+                89 Rs.
+              </span>
+            </span>
+            <button class="btn-reset products__card-reviews" type="button">
+              1256 Reviews
+            </button>
+          </div>
+          <button class="btn btn-reset products__card-btn" type="button">
+            buy now
+          </button>
+        </div>
+        <div class="products__card">
+          <div class="products__card-img-block" tabindex="0">
+            <picture class="products__card-face">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-6.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/product-sm-6.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-6.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/product-md-6.jpg">
+              <source srcset="./images/product-bg-6.webp" type="image/webp">
+              <img class="products__card-img" loading="lazy" src="./images/product-bg-6.jpg" alt="Jute grocery bag" width="360" height="450">
+            </picture>
+            <div class="products__card-back">
+              <div class="products__card-back-text text">
+                Make grocery shopping greener and easier
+                with our Jute Grocery Bag. Crafted from
+                natural jute fibers, this sturdy and reusable
+                bag is the perfect eco-conscious companion
+                for your sustainable lifestyle.
+                Ditch single-use plastics and opt for this
+                eco-friendly alternative to carry your
+                groceries while reducing plastic waste.
+              </div>
+            </div>
+          </div>
+          <h3 class="third-title products__card-title">
+            Jute grocery bag
+          </h3>
+          <div class="products__card-info">
+            <span class="products__card-price-block">
+              <span class="products__card-discounted-price">
+                59 Rs.
+              </span>
+              <span class="products__card-price">
+                89 Rs.
+              </span>
+            </span>
+            <button class="btn-reset products__card-reviews" type="button">
+              895 Reviews
+            </button>
+          </div>
+          <button class="btn btn-reset products__card-btn" type="button">
+            buy now
+          </button>
+        </div>
+      </div>
+      <button class="btn-reset btn products__btn" type="button">
+        explore more
+      </button>
+    </div>
+    <svg class="products-butterfly">
+      <use xlink:href="./images/sprite.svg#products-butterfly"></use>
+    </svg>
+    <svg class="leaf-top">
+      <use xlink:href="./images/sprite.svg#leaf-top"></use>
+    </svg>
+    <svg class="leaf-bottom">
+      <use xlink:href="./images/sprite.svg#leaf-bottom"></use>
+    </svg>
+  </div>
+</section>
+
+    <section class="about" id="about">
+  <div class="about__background">
+    <div class="outer-container">
+      <div class="container about__container">
+        <h2 class="second-title about__title">
+          About us
+        </h2>
+        <div class="logo about__logo">
+          <img class="about__logo-img" src="./images/svg/logo.svg" alt="Logo" width="171" height="43">
+        </div>
+        <div class="text about__text">
+          <p class="about__paragraph-1">
+            At Greenify, we are more than just an e-commerce website; we are a passionate community dedicated to
+            fostering
+            a
+            sustainable and eco-friendly lifestyle.
+          </p>
+          <p class="about__paragraph-1">
+            Our mission is to empower environmentally conscious consumers by offering a curated selection of
+            high-quality,
+            sustainable products
+            that inspire positive change and make a difference in the world.
+          </p>
+        </div>
+        <h3 class="third-title about__third-title">
+          Mission Statement
+        </h3>
+        <div class="text about__text">
+          <p class="about__paragraph-2">
+            "To be the leading platform for sustainable living, providing eco-friendly products and fostering a green
+            community
+            that promotes conscious consumption and environmental responsibility."
+          </p>
+        </div>
+        <h3 class="third-title about__third-title">
+          Vision Statement
+        </h3>
+        <div class="text about__text">
+          <p class="about__paragraph-3">
+            "To create a greener future for generations to come, where every choice matters, and sustainability is at
+            the
+            core
+            of everyday living.
+          </p>
+          <p class="about__paragraph-3">
+            We envision a world where eco-friendly practices are the norm, and together, we can make a significant
+            impact
+            on
+            the health of our planet."
+          </p>
+        </div>
+        <button class="btn btn-reset about__btn" type="button">
+          read more
+        </button>
+      </div>
+      <svg class="about-primary-butterfly">
+        <use xlink:href="./images/sprite.svg#primary-butterfly"></use>
+      </svg>
+    </div>
+  </div>
+</section>
+
+    <section class="reviews">
+  <div class="outer-container">
+    <div class="container reviews__container">
+      <h2 class="second-title reviews__title">
+        Customer Reviews
+      </h2>
+      <div class="swiper reviews-swiper">
+        <div class="swiper-wrapper reviews-swiper-wrapper">
+          <div class="swiper-slide reviews-swiper-slide">
+            <div class="reviews__card">
+              <svg class="reviews__card-circle">
+                <use xlink:href="./images/sprite.svg#circle"></use>
+              </svg>
+              <div class="reviews__card-img">
+                <picture>
+                  <source srcset="./images/reviews-1.webp" type="image/webp">
+                  <img src="./images/reviews-1.jpg" alt="Customer's photo" width="100" height="100">
+                </picture>
+              </div>
+              <h3 class="third-title reviews__card-title">
+                Sarah Johnson
+              </h3>
+              <div class="text reviews__card-text">
+                "I absolutely love my Organic Cotton Tote Bag
+                from Greenify! It's not only stylish but also
+                eco-friendly. Knowing that I'm making
+                a positive impact on the environment with
+                my purchase makes me feel great.
+                Highly recommend this sustainable accessory!"
+              </div>
+              <div class="reviews__card-bottom">
+                <span class="reviews__card-rating">
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                </span>
+                <svg class="reviews__card-bottom-face">
+                  <use xlink:href="./images/sprite.svg#smile"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide reviews-swiper-slide">
+            <div class="reviews__card">
+              <svg class="reviews__card-circle">
+                <use xlink:href="./images/sprite.svg#circle"></use>
+              </svg>
+              <div class="reviews__card-img">
+                <picture>
+                  <source srcset="./images/reviews-2.webp" type="image/webp">
+                  <img src="./images/reviews-2.jpg" alt="Customer's photo" width="100" height="100">
+                </picture>
+              </div>
+              <h3 class="third-title reviews__card-title">
+                Mark Anderson
+              </h3>
+              <div class="text reviews__card-text">
+                "The Bamboo Toothbrushes from Greenify are
+                a game-changer! The quality is outstanding,
+                and I love the fact that they are made from
+                renewable bamboo. My oral care routine just
+                got a lot greener, and I couldn't be happier.
+                Kudos to Greenify for offering such fantastic
+                eco-friendly products!"
+              </div>
+              <div class="reviews__card-bottom">
+                <span class="reviews__card-rating">
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                </span>
+                <svg class="reviews__card-bottom-face">
+                  <use xlink:href="./images/sprite.svg#smile"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide reviews-swiper-slide">
+            <div class="reviews__card">
+              <svg class="reviews__card-circle">
+                <use xlink:href="./images/sprite.svg#circle"></use>
+              </svg>
+              <div class="reviews__card-img">
+                <picture>
+                  <source srcset="./images/reviews-3.webp" type="image/webp">
+                  <img src="./images/reviews-3.jpg" alt="Customer's photo" width="100" height="100">
+                </picture>
+              </div>
+              <h3 class="third-title reviews__card-title">
+                Emily Lee
+              </h3>
+              <div class="text reviews__card-text">
+                "I recently bought the Hemp Backpack from
+                Greenify, and I must say it's a fantastic
+                investment. The durability of the hemp
+                material is impressive, and I feel good knowing
+                I'm choosing a sustainable alternative.
+                This backpack is perfect for my outdoor
+                adventures and daily commutes.
+                Thumbs up for the eco-conscious design!"
+              </div>
+              <div class="reviews__card-bottom">
+                <span class="reviews__card-rating">
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                </span>
+                <svg class="reviews__card-bottom-face">
+                  <use xlink:href="./images/sprite.svg#smile"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide reviews-swiper-slide">
+            <div class="reviews__card">
+              <svg class="reviews__card-circle">
+                <use xlink:href="./images/sprite.svg#circle"></use>
+              </svg>
+              <div class="reviews__card-img">
+                <picture>
+                  <source srcset="./images/reviews-1.webp" type="image/webp">
+                  <img src="./images/reviews-1.jpg" alt="Customer's photo" width="100" height="100">
+                </picture>
+              </div>
+              <h3 class="third-title reviews__card-title">
+                Sarah Johnson
+              </h3>
+              <div class="text reviews__card-text">
+                "I absolutely love my Organic Cotton Tote Bag
+                from Greenify! It's not only stylish but also
+                eco-friendly. Knowing that I'm making
+                a positive impact on the environment with
+                my purchase makes me feel great.
+                Highly recommend this sustainable accessory!"
+              </div>
+              <div class="reviews__card-bottom">
+                <span class="reviews__card-rating">
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                </span>
+                <svg class="reviews__card-bottom-face">
+                  <use xlink:href="./images/sprite.svg#smile"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide reviews-swiper-slide">
+            <div class="reviews__card">
+              <svg class="reviews__card-circle">
+                <use xlink:href="./images/sprite.svg#circle"></use>
+              </svg>
+              <div class="reviews__card-img">
+                <picture>
+                  <source srcset="./images/reviews-2.webp" type="image/webp">
+                  <img src="./images/reviews-2.jpg" alt="Customer's photo" width="100" height="100">
+                </picture>
+              </div>
+              <h3 class="third-title reviews__card-title">
+                Mark Anderson
+              </h3>
+              <div class="text reviews__card-text">
+                "The Bamboo Toothbrushes from Greenify are
+                a game-changer! The quality is outstanding,
+                and I love the fact that they are made from
+                renewable bamboo. My oral care routine just
+                got a lot greener, and I couldn't be happier.
+                Kudos to Greenify for offering such fantastic
+                eco-friendly products!"
+              </div>
+              <div class="reviews__card-bottom">
+                <span class="reviews__card-rating">
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                </span>
+                <svg class="reviews__card-bottom-face">
+                  <use xlink:href="./images/sprite.svg#smile"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide reviews-swiper-slide">
+            <div class="reviews__card">
+              <svg class="reviews__card-circle">
+                <use xlink:href="./images/sprite.svg#circle"></use>
+              </svg>
+              <div class="reviews__card-img">
+                <picture>
+                  <source srcset="./images/reviews-3.webp" type="image/webp">
+                  <img src="./images/reviews-3.jpg" alt="Customer's photo" width="100" height="100">
+                </picture>
+              </div>
+              <h3 class="third-title reviews__card-title">
+                Emily Lee
+              </h3>
+              <div class="text reviews__card-text">
+                "I recently bought the Hemp Backpack from
+                Greenify, and I must say it's a fantastic
+                investment. The durability of the hemp
+                material is impressive, and I feel good knowing
+                I'm choosing a sustainable alternative.
+                This backpack is perfect for my outdoor
+                adventures and daily commutes.
+                Thumbs up for the eco-conscious design!"
+              </div>
+              <div class="reviews__card-bottom">
+                <span class="reviews__card-rating">
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                  <svg class="reviews__card-rating-star">
+                    <use xlink:href="./images/sprite.svg#star"></use>
+                  </svg>
+                </span>
+                <svg class="reviews__card-bottom-face">
+                  <use xlink:href="./images/sprite.svg#smile"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-btns">
+          <button class="btn-reset swiper-button-prev" type="button">
+            <svg>
+              <use xlink:href="./images/sprite.svg#prev"></use>
+            </svg>
+          </button>
+          <div class="swiper-pagination"></div>
+          <button class="btn-reset swiper-button-next" type="button">
+            <svg>
+              <use xlink:href="./images/sprite.svg#next"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <svg class="arrows-circle">
+      <use xlink:href="./images/sprite.svg#arrows-circle"></use>
+    </svg>
+    <svg class="green-leaves">
+      <use xlink:href="./images/sprite.svg#green-leaves"></use>
+    </svg>
+    <svg class="yellow-leaves">
+      <use xlink:href="./images/sprite.svg#yellow-leaves"></use>
+    </svg>
+  </div>
+</section>
+
+    <section class="blogs">
+  <div class="outer-container">
+    <div class="container blogs__container">
+      <h2 class="second-title blogs__title">
+        Blogs
+      </h2>
+      <div class="blogs__card-block">
+        <div class="blogs__card">
+          <div class="blogs__card-img">
+            <picture>
+              <source media="(max-width: 560px)" srcset="./images/blogs-sm-1.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/blogs-sm-1.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/blogs-md-1.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/blogs-md-1.jpg">
+              <source srcset="./images/blogs-bg-1.webp" type="image/webp">
+              <img loading="lazy" src="./images/blogs-bg-1.jpg" alt="A group of people" width="360" height="260">
+            </picture>
+          </div>
+          <div class="blogs__card-description">
+            <h3 class="third-title blogs__card-title">
+              Embracing Sustainability
+            </h3>
+            <div class="blogs__card-text text">
+              The Power of Eco-Friendly Products at Greenify
+            </div>
+            <button class="btn-reset btn blogs__card-btn" type="button">
+              read more
+            </button>
+          </div>
+        </div>
+        <div class="blogs__card">
+          <div class="blogs__card-img">
+            <picture>
+              <source media="(max-width: 560px)" srcset="./images/blogs-sm-2.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/blogs-sm-2.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/blogs-md-2.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/blogs-md-2.jpg">
+              <source srcset="./images/blogs-bg-2.webp" type="image/webp">
+              <img loading="lazy" src="./images/blogs-bg-2.jpg" alt="Bamboo leaf" width="360" height="260">
+            </picture>
+          </div>
+          <div class="blogs__card-description">
+            <h3 class="third-title blogs__card-title">
+              Sustainable Living<br>Made Simple
+            </h3>
+            <div class="blogs__card-text text">
+              How Greenify Helps You Make a Difference
+            </div>
+            <button class="btn-reset btn blogs__card-btn" type="button">
+              read more
+            </button>
+          </div>
+        </div>
+        <div class="blogs__card">
+          <div class="blogs__card-img">
+            <picture>
+              <source media="(max-width: 560px)" srcset="./images/blogs-sm-3.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/blogs-sm-3.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/blogs-md-3.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/blogs-md-3.jpg">
+              <source srcset="./images/blogs-bg-3.webp" type="image/webp">
+              <img loading="lazy" src="./images/blogs-bg-3.jpg" alt="Women with eco-shopping" width="360" height="260">
+            </picture>
+          </div>
+          <div class="blogs__card-description">
+            <h3 class="third-title blogs__card-title">
+              Greenify's Guide to<br>Eco-Friendly Shopping
+            </h3>
+            <div class="blogs__card-text text">
+              Reducing Your Carbon Footprint<br>One Purchase at a Time
+            </div>
+            <button class="btn-reset btn blogs__card-btn" type="button">
+              read more
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg class="white-butterfly">
+      <use xlink:href="./images/sprite.svg#white-butterfly"></use>
+    </svg>
+    <svg class="accent-bg-butterfly">
+      <use xlink:href="./images/sprite.svg#accent-bg-butterfly"></use>
+    </svg>
+    <svg class="white-branch">
+      <use xlink:href="./images/sprite.svg#white-branch"></use>
+    </svg>
+  </div>
+</section>
+
+    <section class="subscribe">
+  <div class="subscribe__background">
+    <div class="outer-container">
+      <div class="container subscribe__container">
+        <div class="subscribe__block">
+          <div class="subscribe__img-block">
+            <picture>
+              <source media="(max-width: 560px)" srcset="./images/subscribe-sm.webp" type="image/webp">
+              <source media="(max-width: 560px)" srcset="./images/subscribe-sm.jpg">
+              <source media="(max-width: 1150px)" srcset="./images/subscribe-md.webp" type="image/webp">
+              <source media="(max-width: 1150px)" srcset="./images/subscribe-md.jpg">
+              <source srcset="./images/subscribe-bg.webp" type="image/webp">
+              <img loading="lazy" class="subscribe__img" src="./images/subscribe-bg.jpg" alt="Paper bag with dishes" width="360" height="430">
+            </picture>
+          </div>
+          <div class="subscribe__content">
+            <h3 class="third-title subscribe__content-title">
+              "Subscribe to our Newsletter"
+            </h3>
+            <div class="text subscribe__content-text">
+              Join our green community and receive exclusive offers and
+              insightful content straight to your inbox!
+            </div>
+            <form class="subscribe__form">
+              <label class="subscribe__form-label">
+                <input type="text" class="subscribe__form-input" placeholder="Enter your name">
+              </label>
+              <label class="subscribe__form-label">
+                <input type="email" class="subscribe__form-input" placeholder="Enter your e-mail">
+              </label>
+              <button class="btn btn-reset subscribe__form-btn" type="submit">
+                subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg class="green-branch">
+        <use xlink:href="./images/sprite.svg#green-branch"></use>
+      </svg>
+      <svg class="primary-circle">
+        <use xlink:href="./images/sprite.svg#primary-circle"></use>
+      </svg>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer" id="footer">
+  <div class="container footer__container">
+    <div class="logo footer__logo">
+      <img class="footer__logo-img" src="./images/svg/logo.svg" alt="Logo" width="171" height="43">
+    </div>
+    <div class="footer__block">
+      <div class="footer__pages">
+        <h4 class="fourth-title footer__pages-title">
+          Pages
+        </h4>
+        <nav class="nav footer__nav">
+          <ul class="nav__list footer__nav-list list-reset">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">
+                Home
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#products">
+                Shop
+              </a>
+            </li>
+            <li class="footer__nav-item nav__menu-item">
+              <button class="btn-reset footer__nav-link nav__menu-btn" type="button">
+                Categories
+                <svg class="nav__menu-btn-arrow footer__nav-link-arrow">
+                  <use xlink:href="./images/sprite.svg#down"></use>
+                </svg>
+              </button>
+              <ul class="list-reset nav__submenu-list footer__submenu-list">
+                <li class="nav__submenu-item">
+                  <a class="footer__nav-link footer__submenu-link nav__submenu-link" href="#products">
+                    Bag
+                  </a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="footer__nav-link footer__submenu-link nav__submenu-link" href="#products">
+                    T-shirts
+                  </a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="footer__nav-link footer__submenu-link nav__submenu-link" href="#products">
+                    Toothbrush
+                  </a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="footer__nav-link footer__submenu-link nav__submenu-link" href="#products">
+                    Pens
+                  </a>
+                </li>
+                <li class="nav__submenu-item">
+                  <a class="footer__nav-link footer__submenu-link nav__submenu-link" href="#products">
+                    Pencils
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#about">
+                About us
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#footer">
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__contacts">
+        <h4 class="fourth-title footer__contacts-title">
+          Contact us
+        </h4>
+        <ul class="list-reset footer__contacts-list">
+          <li class="footer__contacts-item">
+            <a class="footer__contacts-link" href="tel:+91123456789">
+              <svg class="footer__phone-svg">
+                <use xlink:href="./images/sprite.svg#phone"></use>
+              </svg>
+              <span class="footer__phone">
+                +91 123456789
+              </span>
+            </a>
+          </li>
+          <li class="footer__contacts-item">
+            <a class="footer__contacts-link" href="mailto:info@greenify.com">
+              <svg class="footer__email-svg">
+                <use xlink:href="./images/sprite.svg#mail"></use>
+              </svg>
+              <span class="footer__email">
+                info@greenify.com
+              </span>
+            </a>
+          </li>
+          <li class="footer__contacts-item">
+            <a class="footer__contacts-link">
+              <svg class="footer__address-svg">
+                <use xlink:href="./images/sprite.svg#location"></use>
+              </svg>
+              <span class="footer__address">
+                102-Complex, Xyz Road City name, State, 136458
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__social-and-copy">
+        <ul class="list-reset footer__social-list">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" aria-label="Facebook">
+              <svg>
+                <use xlink:href="./images/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" aria-label="Instagram">
+              <svg>
+                <use xlink:href="./images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" aria-label="Linkedin">
+              <svg>
+                <use xlink:href="./images/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="#" aria-label="Twitter">
+              <svg>
+                <use xlink:href="./images/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="footer__copy">
+          <span>
+            terms &amp;&nbsp;services
+          </span>
+          <span>
+            Greenify @ all right reserved 2023
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+
+</html>

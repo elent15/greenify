@@ -1,3 +1,4 @@
+// button "EXPLORE MORE"
 const showMore = () => {
   const productsBtn = document.querySelector('.products__btn');
   const productsCardBlock = document.querySelector('.products__card-block');

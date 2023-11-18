@@ -5,35 +5,22 @@
   background-size: cover;
   background-position: center 30%;
   width: 100%;
-  height: 744px;
 
   @media (max-width: 1150px) {
-    height: 762px;
     background-image: url("../images/about-md.webp");
   }
 
-  @media (max-width: 734px) {
-    height: auto;
-  }
-
   @media (max-width: 560px) {
-    height: 829px;
     background-image: url("../images/about-sm.webp");
   }
 
-  @media (max-width: 380px) {
-    height: 920px;
-  }
-
   &__background {
-    height: 100%;
     background: rgba(255, 255, 255, 0.85);
   }
 
   &__container {
-    padding-top: 60px;
+    padding-top: 62px;
     padding-bottom: 60px;
-    height: 100%;
     text-align: center;
 
     @media (max-width: 1150px) {
@@ -92,67 +79,44 @@
   }
 
   &__paragraph-1 {
-    width: 1077px;
+    max-width: 1077px;
 
     @media (max-width: 1150px) {
-      width: 643px;
-    }
-
-    @media (max-width: 734px) {
-      width: 530px;
+      max-width: 643px;
     }
 
     @media (max-width: 560px) {
-      width: 334px;
-    }
-
-    @media (max-width: 380px) {
-      width: 290px;
+      max-width: 334px;
     }
   }
 
   &__paragraph-2 {
-    width: 803px;
+    max-width: 803px;
 
     @media (max-width: 1150px) {
-      width: 665px;
-    }
-
-    @media (max-width: 734px) {
-      width: 530px;
+      max-width: 665px;
     }
 
     @media (max-width: 560px) {
-      width: 329px;
-    }
-
-    @media (max-width: 380px) {
-      width: 290px;
+      max-width: 329px;
     }
   }
 
   &__paragraph-3 {
-    width: 973px;
+    max-width: 973px;
 
     @media (max-width: 1150px) {
-      width: 567px;
-    }
-
-    @media (max-width: 734px) {
-      width: 530px;
+      max-width: 567px;
     }
 
     @media (max-width: 560px) {
-      width: 329px;
-    }
-
-    @media (max-width: 380px) {
-      width: 290px;
+      max-width: 329px;
     }
   }
 
   &__btn {
     margin-top: 20px;
+    width: 166px;
 
     @media (max-width: 1150px) {
       margin-top: 10px;

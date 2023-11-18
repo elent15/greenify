@@ -10,28 +10,30 @@
     margin-right: 20px;
     width: 28px;
     height: 24px;
+    outline-offset: 2px;
+    outline: 1px solid transparent;
+    transition: outline-color 0.3s ease-in-out;
 
     &--active {
-      margin-left: 15px;
 
       & .burger__line:first-child {
         position: absolute;
-        left: 25%;
+        left: 0;
         top: 50%;
         transform: rotate(45deg);
         transform-origin: center;
-        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
       }
 
       & .burger__line:last-child {
         position: absolute;
         bottom: auto;
-        left: 25%;
+        left: 0;
         top: 50%;
         width: 100%;
         transform: rotate(-45deg);
         transform-origin: center;
-        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
       }
 
       & .burger__line:nth-child(2) {
@@ -44,18 +46,19 @@
       width: 100%;
       height: 3px;
       background-color: var(--black);
+      transition: background-color 0.3s ease-in-out;
 
       &:nth-child(3) {
         width: 50%;
       }
     }
 
-    &:focus {
-      outline: none;
+    &:focus-visible {
+      outline-style: solid;
     }
 
-    &:focus .burger__line {
-      background-color: var(--primary-green);
+    &:focus {
+      outline-color: var(--black);
     }
 
     &:hover .burger__line {
@@ -66,5 +69,9 @@
   @media (max-width: 560px) {
     width: 23px;
     height: 20px;
+
+    &--active {
+      margin-left: 15px;
+    }
   }
 }

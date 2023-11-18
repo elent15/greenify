@@ -1,4 +1,15 @@
-new Swiper('.swiper', {
+// slider
+new Swiper('.hero-swiper', {
+  slidesPerView: 1,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  effect: 'flip',
+});
+
+new Swiper('.reviews-swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
