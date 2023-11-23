@@ -35,19 +35,18 @@ const menu = () => {
           menuBtnArrow.classList.remove('nav__menu-btn-arrow--active');
         });
       });
+
+      document.addEventListener('click', (el) => {
+        const target = el.target;
+        const itsMenu = target == navMenuItem || navMenuItem.contains(target);
+
+        if (!itsMenu && menu.classList.contains('nav__submenu-list--dropdown')) {
+          menu.classList.remove('nav__submenu-list--dropdown');
+          menuBtnArrow.classList.remove('nav__menu-btn-arrow--active');
+        }
+      });
     });
   });
-
-  document.addEventListener('click', (el) => {
-    const target = el.target;
-    const itsMenu = target == navMenuItem || navMenuItem.contains(target);
-
-    if (!itsMenu && menu.classList.contains('nav__submenu-list--dropdown')) {
-      menu.classList.remove('nav__submenu-list--dropdown');
-      menuBtnArrow.classList.remove('nav__menu-btn-arrow--active');
-    }
-  });
-
 }
 
 menu();

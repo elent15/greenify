@@ -6,7 +6,7 @@ new Swiper('.hero-swiper', {
     delay: 2500,
     disableOnInteraction: false,
   },
-  effect: 'flip',
+  effect: 'fade',
 });
 
 new Swiper('.reviews-swiper', {

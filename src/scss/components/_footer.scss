@@ -151,7 +151,12 @@
 
   &__nav-link-arrow {
     fill: var(--white);
-    transition: fill 0.3s ease-in-out;
+    transform: rotate(0deg);
+    transition: fill 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    &.nav__menu-btn-arrow--active {
+      transform: rotate(180deg);
+    }
 
     @media (max-width: 560px) {
       width: 12px;
@@ -160,6 +165,10 @@
 
     @media (max-width: 380px) {
       transform: rotate(-90deg);
+
+      &.nav__menu-btn-arrow--active {
+        transform: rotate(0deg);
+      }
     }
   }
 
